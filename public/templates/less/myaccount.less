@@ -1,0 +1,145 @@
+/* Vars */
+@color_bg: #E1F5FE;
+@color_one: #2196F3;
+@color_two: #1E88E5;
+@color_th: #1565C0;
+@color_register_btn: #E51EAD;
+.content-content{
+	width: 100% !important;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 20px 30px;
+	display: flex;
+	justify-content: space-between;
+	.block{
+		.tr{
+			width: 100%;
+			height: 45px;
+			background: @color_two;
+			-webkit-transform: skew(30deg);
+			-moz-transform: skew(30deg);
+			-o-transform: skew(30deg);
+			transform: skew(30deg);
+		}
+		.title{
+			font-weight: 300;
+			color: #fff;
+			width: 100%;
+			height: 45px;
+			box-sizing: border-box;
+			padding: 0 30px;
+			line-height: 45px;
+		    transform: skew(-30deg);
+		}
+	}
+	.left, .right{
+		width: 49%;
+	}
+	.info-block{
+		padding: 10px 20px;
+		.balance{
+			.sum{
+				font-size: 36px;
+				font-weight: 900;
+			}
+			.icon{
+				margin-left: 10px;
+				cursor: pointer;
+			}
+			.curs{
+				font-size: 14px;
+			}
+		}
+		.url{
+			margin: 10px 0;
+			a{
+				color: #000;
+				font-size: 14px;
+				&:hover{
+					color: @color_two;
+				}
+			}
+		}
+		.title-block{
+			font-size: 18px;
+			font-weight: 300;
+		}
+	}
+	.two-info {
+		display: flex;
+	}
+	.full-bl{
+		width: 100%;
+		.title{
+			display: flex;
+			justify-content: space-between;
+			.edit, .edit-close{
+				cursor: pointer;
+				display: flex;
+				img{
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+	.line{
+		margin: 10px 0;
+		border-bottom: 1px solid #BABBBC;
+		padding: 10px 0;
+		&:nth-child(1){
+			margin: 0 0 10px 0;
+		}
+		.text{
+			font-size: 14px;
+			font-weight: 300;
+		}
+	}
+	.table{
+		font-size: 13px;
+		table{
+			width: 100%;
+			table-layout: auto;
+			thead{
+				width: 100%;
+				border-bottom: 1px solid #BABBBC;
+			}
+		}
+	}
+	.no-info{
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.login-history{
+		display: flex;
+		justify-content: space-between;
+	}
+	.text-info{
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+		margin-top: 20px;
+		label{
+			color: @color_two;
+		}
+	}
+	.error{
+		color: red;
+	}
+	.success{
+		color: green;
+	}
+	.warning{
+		color: yellow;
+	}
+}
+.save-btn{
+	display: block;
+	height: 33px;
+	line-height: 33px;
+	color: #fff;
+	padding: 0 25px;
+	margin-right: 20px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background: @color_register_btn;
+}

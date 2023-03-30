@@ -1,0 +1,119 @@
+@color_bg: #E1F5FE;
+@color_one: #2196F3;
+@color_two: #1E88E5;
+@color_th: #1565C0;
+@color_register_btn: #E51EAD;
+/* Побеждаем хром */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  -webkit-text-fill-color: #ссс;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background: #fff;  
+}
+.content{
+	display: flex;
+	justify-content: center;
+}
+.content-content{
+	width: 540px !important;
+	.block{
+		width: 100%;
+		.input{
+			margin-top: 20px;
+			&:nth-child(1){
+				margin-top: 0px;
+			}
+			input{
+				position: relative;
+				width: 100%;
+				height: 45px;
+				border: none;
+				border-bottom: 1px solid #BABBBC;
+				box-sizing: border-box;
+				padding: 0 15px;
+				outline: none;
+				background: transparent;
+
+			}
+			label{
+				color: @color_two;
+			}
+			.labelText {
+				position: absolute;
+				line-height: 42px;
+				color: #a5a5a5;
+				transition: .5s;
+				margin-left: 10px;
+				font-size: 14px;
+				font-weight: 300;
+			}
+			.text{
+				font-size: 12px;
+				font-weight: 300;
+				margin-top: 10px;
+			}
+			button{
+				display: block;
+				width: 270px;
+				height: 33px;
+				line-height: 33px;
+				color: #fff;
+				padding: 0 25px;
+				margin-right: 20px;
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				background: @color_register_btn;
+			}
+		}
+		.button{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		.focus .labelText {
+			transform: translateY(-20px) translateX(-10px);
+			font-size: 14px;
+			color: @color_two;
+		}
+		.checkbox{
+			display: flex;
+		    input{
+		    	width: 20px;
+		    }
+		    .text{
+		    	margin-left: 10px;
+		    	font-size: 14px;
+		    	a{
+		    		color: @color_two;
+		    	}
+		    }
+		}
+		.text-info{
+			font-size: 14px;
+			font-weight: 300;
+			text-align: center;
+			margin-top: 20px;
+			label{
+				color: @color_two;
+			}
+		}
+		.error{
+			color: red;
+		}
+		.success{
+			color: green;
+		}
+		.warning{
+			color: yellow;
+		}
+	}
+}
